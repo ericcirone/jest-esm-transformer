@@ -5,7 +5,7 @@ module.exports = {
 		const options = {
 			babelrc: false,
 			compact: false,
-			plugins: [require.resolve("@babel/plugin-transform-modules-commonjs"), require.resolve("dynamic-import-node")],
+			plugins: [require.resolve("@babel/plugin-transform-modules-commonjs"), require.resolve("babel-plugin-dynamic-import-node")],
 		};
 
 		return babel.transform(src, options).code;
